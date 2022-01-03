@@ -1,0 +1,15 @@
+{
+  "name": "hedera-blockchain",
+  "version": "1.0.0",
+  "description": "hand on practice on hedera blockchcain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salik Saleem",
+  "license": "ISC",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.7.0-beta.2",
+    "dotenv": "^10.0.0"
+  }
+}

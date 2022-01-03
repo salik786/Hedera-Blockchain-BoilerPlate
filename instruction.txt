@@ -1,0 +1,4 @@
+1 - first check your smart contract in truffle remix and then compile to get JSON file
+2 - STORE THIS FILE IN HEDERA AS A HEX CODE 
+3 - THEN THIS HEX CODE WILL BE DEPLOYED ON HEDERA  
+  
