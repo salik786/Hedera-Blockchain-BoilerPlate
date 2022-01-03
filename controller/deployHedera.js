@@ -8,7 +8,10 @@ const {
   Hbar
 } = require('@hashgraph/sdk')
 
-let helloHydra = require('./Hello_Hedera.json')
+var express=require("express");
+var router = express.Router();
+
+let helloHydra = require('../Hello_Hedera.json')
 require('dotenv').config()
 
 // storing smart contract  byte code on hydra
@@ -99,8 +102,18 @@ async function getValue () {
 
   //Log the updated message to the console
   console.log('The updated contract message: ' + message2)
+  return message2
 }
 
 setValue()
 getValue()
 // Deploy()
+
+router.get('/',async function (req, res) {
+  // getValue()
+  const data=await getValue();
+  console.log(data)
+  res.send(data)
+})
+
+module.exports = router;
